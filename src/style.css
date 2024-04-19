@@ -1,0 +1,172 @@
+body{
+    background-color: rgb(19, 19, 19);
+}
+.image{
+    width: 400px;
+
+}
+
+.image-container{
+    animation: zoom-in .4s;
+}
+
+.navbar{
+    background-color: rgb(0, 255, 0);
+    backdrop-filter: blur(10px);
+}
+
+.text-container{
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: lime;
+    margin-top: -75px;
+}
+
+.card-container a{
+    text-decoration: none;
+}
+
+.lines{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    color: #07ff07;
+    border-radius: 50%;
+    font-size: larger;
+}
+
+.icons{
+    margin:10px 15px;
+}
+
+.updation{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    font-style: normal;
+    color: lime;
+    margin: 10px;
+    text-align: center;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: transparent;
+    border: 2px solid #07ff07;
+    box-shadow: 2px 2px 15px #000000 inset;
+    text-align: center;
+    color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico';
+    
+  }
+  
+.lines-1, .lines-2, .lines-3{
+    background-color: #07ff07;
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+}
+  .card{
+    width: 300px;
+  }
+  .card:hover{
+    transition: 0.2s;
+    color: #07ff07;
+    box-shadow: 2px 2px 15px #07ff07 inset;
+  }
+  
+  .card:hover .cards{
+    color: darkgreen !important;
+  }
+
+.card-container{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cards{
+    font-family: "Luckiest Guy", cursive;
+  font-weight: 200;
+  font-size: 30px;
+  font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+    transition: 0.8s;
+}
+
+.imgtxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navbar-header a{
+    font-size: 30px !important;
+}
+
+.navbar a{
+    background-color: lime;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: black; 
+    margin-top: 8px;
+    align-items: center;
+}
+
+.navbar-nav a:hover{
+    background-color: black !important;
+    color: lime;
+}
+
+@media (max-width: 768px) {
+    .nav li{
+        display: none;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom:30px;
+        width: 75%;
+    }
+    .lines{
+        display: block;
+    }
+}
+
+@keyframes zoom-in{
+    0%{
+        opacity: 0;
+        transform: scale(.1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
